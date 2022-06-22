@@ -4,11 +4,11 @@ import axios from "axios";
 export default function Form() {
   function formatTime(timestamp) {
     const now = new Date(timestamp);
-    const hours = now.getHours();
+    let hours = now.getHours();
     if (hours < 10) {
       hours = `0${hours}`;
     }
-    const minutes = now.getMinutes();
+    let minutes = now.getMinutes();
     if (minutes < 10) {
       minutes = `0${minutes}`;
     }
@@ -70,13 +70,7 @@ export default function Form() {
         <div class="col-4 current-temp-right">
           <img src={icon} class="current-weather-icon" alt={description} />
           <span class="current-temperature">{Math.round(temp)}</span>
-          <span class="degree-btn">
-            {" "}
-            <a href="#" class="celsius-btn active" id="celsius-btn">
-              {" "}
-              °C
-            </a>
-          </span>
+          °C
         </div>
       </div>
     );
