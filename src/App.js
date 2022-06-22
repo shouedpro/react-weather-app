@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <h1>Weather App</h1>
       <Form />
+      <a href="https://github.com/shouedpro/react-weather-app">GitHub</a>
     </div>
   );
 }
