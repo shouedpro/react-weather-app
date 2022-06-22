@@ -1,13 +1,142 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Raleway", sans-serif;
+  margin: 100px;
+  background-color: #cef3fa;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+section {
+  padding: auto 100px;
+}
+
+a {
+  color: inherit;
+  color: rgb(155, 155, 155);
+  text-decoration: none;
+}
+
+a :hover {
+  color: inherit;
+  color: #0ccaf0;
+  font-size: 25px;
+  font-weight: 600;
+  top: -34px;
+}
+
+footer {
+  color: rgb(155, 155, 155);
+  font-family: monospace;
+  font-weight: 200;
+  margin: 100px auto 50px auto;
+  text-align: center;
+}
+
+.container {
+  border: 1px solid rgb(155, 155, 155);
+  border-radius: 14px;
+  background-color: #fbfeff;
+}
+
+.search {
+  margin-top: 80px;
+  padding: 20px 100px;
+}
+
+.current-location-btn :hover {
+  color: white;
+}
+
+.current-location-btn .active {
+  color: white;
+}
+
+.mini-header {
+  color: rgb(155, 155, 155);
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.current-temp-left {
+  padding-left: 150px;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
+.current-temp-right {
+  text-align: right;
+  padding-right: 150px;
+}
+
+.degree-btn {
+  position: relative;
+  font-size: 25px;
+  font-weight: 600;
+  top: -34px;
+  text-decoration: none;
+}
+
+.degree-btn :hover {
+  color: #0ccaf0;
+  font-size: 25px;
+  font-weight: 600;
+  top: -34px;
+  text-decoration: none;
+}
+
+.degree-btn .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.degree-btn .active :hover {
+  text-decoration: none;
+}
+
+.current-weather-icon {
+  font-size: 100px;
+  text-align: right;
+}
+
+.current-temperature {
+  font-size: 90px;
+  font-weight: 750;
+  text-align: left;
+}
+
+.current-high-low {
+  font-size: 16px;
+  padding: 0 20px 0 210px;
+  text-align: center;
+}
+
+.current-weather {
+  margin: 70px 0;
+  padding: 0 80px;
+}
+
+.humidity-wind {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
 }
