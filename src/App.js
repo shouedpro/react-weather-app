@@ -1,11 +1,10 @@
 import "./App.css";
-import Form from "./Form";
+import SearchWeather from "./SearchWeather";
 
 function App() {
   return (
     <div className="App">
-      <h1>Weather App</h1>
-      <Form />
+      <SearchWeather defaultCity="London" />
     </div>
   );
 }

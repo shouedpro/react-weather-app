@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Weather.css";
 
-export default function Form() {
+export default function Weather() {
   function formatTime(timestamp) {
     const now = new Date(timestamp);
     let hours = now.getHours();
@@ -57,19 +58,23 @@ export default function Form() {
   function handleSubmit(event) {
     event.preventDefault();
     setResult(
-      <div class="row">
-        <div class="current-temperature col-8 current-temp-left">
+      <div className="row">
+        <div className="mini-header">
+          CURRENT WEATHER | Last updated at
+          <span className="time">{formatTime}</span>
+        </div>
+        <div className="current-temperature col-6 current-temp-left">
           <h1>{city}</h1>
           <h4>{formatDay}</h4>
-          <h5 class="weather-description">{description}</h5>
-          <p class="humidity-wind">
+          <h5 className="weather-description">{description}</h5>
+          <p className="humidity-wind">
             Humidity: {Math.round(humidity)}% Wind: {Math.round(wind)}km/h
           </p>
         </div>
 
-        <div class="col-4 current-temp-right">
+        <div className="col-6 current-temp-right">
           <img src={icon} class="current-weather-icon" alt={description} />
-          <span class="current-temperature">{Math.round(temp)}</span>
+          <span className="current-temperature">{Math.round(temp)}</span>
           °C
         </div>
       </div>
@@ -105,16 +110,12 @@ export default function Form() {
         <input type="submit" class="btn btn-outline-secondary" value="Search" />
         <button
           type="button"
-          class="btn btn-outline-info current-location-btn"
+          className="btn btn-outline-info current-location-btn"
           onSubmit={currentLocation}
         >
           Current Location
         </button>
       </form>
-      <div class="mini-header">
-        CURRENT WEATHER | Last updated at
-        <span class="time">{formatTime}</span>
-      </div>
       {result}
     </div>
   );

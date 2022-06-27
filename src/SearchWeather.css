@@ -1,0 +1,145 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 100px;
+  background-color: #cef3fa;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+section {
+  padding: auto 100px;
+}
+
+a {
+  color: inherit;
+  color: rgb(155, 155, 155);
+  text-decoration: none;
+}
+
+a :hover {
+  color: inherit;
+  color: #0ccaf0;
+  font-size: 25px;
+  font-weight: 600;
+  top: -34px;
+}
+
+footer {
+  color: rgb(155, 155, 155);
+  font-family: monospace;
+  font-weight: 200;
+  margin: 100px auto 50px auto;
+  text-align: center;
+}
+
+.container {
+  border: 1px solid rgb(155, 155, 155);
+  border-radius: 14px;
+  background-color: #fbfeff;
+  max-width: 1000px;
+}
+
+.search {
+  margin-top: 80px;
+  padding: 20px 100px;
+}
+
+.current-location-btn :hover {
+  color: white;
+}
+
+.current-location-btn .active {
+  color: white;
+}
+
+.mini-header {
+  color: rgb(155, 155, 155);
+  font-size: 12px;
+  padding-left: 150px;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.current-temp-left {
+  padding-left: 150px;
+}
+
+.current-temp-right {
+  text-align: right;
+  font-size: 90px;
+  font-weight: 750;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
+.degree-btn {
+  position: relative;
+  font-size: 25px;
+  font-weight: 600;
+  top: -34px;
+  text-decoration: none;
+}
+
+.degree-btn :hover {
+  color: #0ccaf0;
+  font-size: 25px;
+  font-weight: 600;
+  top: -34px;
+  text-decoration: none;
+}
+
+.degree-btn .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.degree-btn .active :hover {
+  text-decoration: none;
+}
+
+.current-weather-icon {
+  font-size: 200px;
+  text-align: right;
+}
+
+.current-weather {
+  margin: 70px 0;
+  padding: 0 80px;
+}
+
+.humidity-wind {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.unit {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 500px;
+}
+
+.temp-unit {
+  vertical-align: text-top;
+  display: inline-block;
+  justify-content: space-between;
+  padding-right: 150px;
+  text-align: right;
+}
