@@ -14,10 +14,6 @@ h4 {
   font-weight: 700;
 }
 
-h5 {
-  font-size: 30px;
-}
-
 section {
   padding: auto 100px;
 }
@@ -54,14 +50,6 @@ footer {
 .search {
   margin-top: 80px;
   padding: 20px 100px;
-}
-
-.current-location-btn :hover {
-  color: white;
-}
-
-.current-location-btn .active {
-  color: white;
 }
 
 .mini-header {
@@ -116,7 +104,7 @@ footer {
 }
 
 .current-weather-icon {
-  font-size: 200px;
+  font-size: 500px;
   text-align: right;
 }
 
