@@ -15,10 +15,7 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6 current-temp-left">
           <h1>{props.data.city}</h1>
-          <h4>
-            <FormattedDate date={props.data.date} />
-          </h4>
-          <h5 className="weather-description">{props.data.description}</h5>
+          <h4 className="weather-description">{props.data.description}</h4>
           <p className="humidity-wind">
             Humidity: {Math.round(props.data.humidity)}% Wind:{" "}
             {Math.round(props.data.wind)}km/h
@@ -28,7 +25,7 @@ export default function WeatherInfo(props) {
         <div className="col-6 temp-unit">
           <img
             src={props.data.icon}
-            class="current-weather-icon"
+            className="current-weather-icon"
             alt="weathericon"
           />
           <span>
